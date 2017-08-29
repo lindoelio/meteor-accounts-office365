@@ -7,6 +7,8 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
+  api.versionsFrom('1.5.1');
+
   api.use('ecmascript');
 
   api.use('accounts-base', ['client', 'server']);
@@ -14,8 +16,8 @@ Package.onUse(function(api) {
 
   api.use('accounts-oauth', ['client', 'server']);
 
-  api.use('lindoelio:office365-oauth');
-  api.imply('lindoelio:office365-oauth');
+  api.use('lindoelio:office365-oauth@0.1.0');
+  api.imply('lindoelio:office365-oauth@0.1.0');
 
   api.use(
     ['accounts-ui'],
