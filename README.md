@@ -13,7 +13,7 @@ Settup the service configuration for your Microsoft Office 365 application.
 ```javascript
   ServiceConfiguration.configurations.upsert({service: 'office365'}, {
     $set: {
-      clientId: 'Your_Office365_Application_ClientID",
+      clientId: 'Your_Office365_Application_ClientID',
       secret: 'Your_Office365_Application_Secret',
       tenant: 'Your_Tenant' // or 'common' for not tenant specific
     }
