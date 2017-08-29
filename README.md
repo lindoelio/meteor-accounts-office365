@@ -9,7 +9,7 @@ Add package to your project.
 meteor add lindoelio:accounts-office365
 ```
 
-Setup the service configuration for your Microsoft Office 365 application.
+Setup the service configuration for your [Microsoft Office 365 application](https://apps.dev.microsoft.com).
 ```javascript
   ServiceConfiguration.configurations.upsert({service: 'office365'}, {
     $set: {
