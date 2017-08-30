@@ -1,6 +1,6 @@
 Package.describe({
   name: 'lindoelio:accounts-office365',
-  version: '0.1.0',
+  version: '0.1.1',
   summary: 'Login service for Microsoft Office 365 accounts',
   git: 'https://github.com/lindoelio/meteor-accounts-office365',
   documentation: 'README.md'
@@ -16,8 +16,8 @@ Package.onUse(function(api) {
 
   api.use('accounts-oauth', ['client', 'server']);
 
-  api.use('lindoelio:office365-oauth@0.1.0');
-  api.imply('lindoelio:office365-oauth@0.1.0');
+  api.use('lindoelio:office365-oauth@0.2.0');
+  api.imply('lindoelio:office365-oauth@0.2.0');
 
   api.use(
     ['accounts-ui'],
